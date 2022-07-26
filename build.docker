@@ -1,0 +1,11 @@
+#!/bin/sh -e
+
+DOCKER_IMAGE=debian:stable-slim
+
+docker run \
+  -t \
+  --rm \
+  -v "$(pwd)":/data \
+  ${DOCKER_IMAGE} \
+  /bin/sh -c 'cd /data && ./build.live'
+
