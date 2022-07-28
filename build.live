@@ -103,3 +103,4 @@ cat <<DOC > $STAGING/isolinux/isolinux.cfg
 UI vesamenu.c32
 
 MENU TITLE Boot Menu
+DEFAULT linux
