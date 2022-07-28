@@ -109,3 +109,4 @@ MENU RESOLUTION 640 480
 menu color screen	37;40      #00000000 #00000000 std
 menu color border	30;44      #40000000 #00000000 std
 menu color title	1;36;44    #c00090f0 #00000000 none
+menu color unsel	37;44      #90ffffff #00000000 std
