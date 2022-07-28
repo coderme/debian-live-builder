@@ -1,0 +1,105 @@
+#!/bin/sh -e
+
+CWD="$(pwd)"
+DIR=/tmp/LIVE_DEBIAN
+CHROOT=$DIR/chroot
+STAGING=$DIR/staging
+
+# root pasword
+ROOT_PW=123
+
+export DEBIAN_FRONTEND=noninteractive
+
+
+apt update -qq &&
+apt install -y -qq \
+    debootstrap \
+    squashfs-tools \
+    xorriso \
+    isolinux \
+    syslinux-efi \
+    grub-pc-bin \
+    grub-efi-amd64-bin \
+    grub-efi-ia32-bin \
+    mtools \
+    dosfstools
+
+#    
+mkdir -p $DIR
+
+debootstrap \
+	--arch=amd64 \
+	--variant=minbase bullseye  \
+	$CHROOT  \
+	https://deb.debian.org/debian/ 
+
+##########################################
+############## from chroot ###############
+cat <<DOC | chroot $CHROOT
+
+export DEBIAN_FRONTEND=noninteractive
+
+echo "debian-live" > /etc/hostname
+
+cat <<123 > /etc/apt/sources.list
+
+deb https://deb.debian.org/debian bullseye main
+deb-src  https://deb.debian.org/debian bullseye main
+
+deb https://deb.debian.org/debian bullseye-backports contrib
+deb-src https://deb.debian.org/debian bullseye-backports contrib
+
+123
+
+apt update -qq && \
+    apt install -y -qq --no-install-recommends  \
+	curl \
+	fdisk \
+	gdisk  \
+	htop \
+	iproute2 \
+	less \
+	linux-image-generic \
+	live-boot \
+	man-db \
+	openssh-client \
+	sysvinit-core \
+	tmux \
+	tree \
+	vim \
+	zfsutils-linux
+
+echo root:$ROOT_PW | chpasswd
+
+apt clean
+
+DOC
+
+##########################################
+
+mkdir -p $STAGING/EFI/BOOT
+mkdir -p $STAGING/boot/grub/x86_64-efi
+mkdir -p $STAGING/isolinux
+mkdir -p $STAGING/live
+mkdir -p $DIR/tmp
+
+# compress chroot
+mksquashfs \
+    $CHROOT \
+    $STAGING/live/filesystem.squashfs \
+    -e boot > /dev/null
+    
+# copy kernel
+cp $CHROOT/boot/vmlinuz-* \
+    $STAGING/live/vmlinuz && \
+cp $CHROOT/boot/initrd.img-* \
+    $STAGING/live/initrd 
+
+
+########################################
+############## BOOT MENU ###############
+
+cat <<DOC > $STAGING/isolinux/isolinux.cfg
+UI vesamenu.c32
+
+MENU TITLE Boot Menu
