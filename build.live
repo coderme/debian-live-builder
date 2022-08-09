@@ -113,3 +113,4 @@ menu color unsel	37;44      #90ffffff #00000000 std
 menu color hotkey	1;37;44    #ffffffff #00000000 std
 menu color sel		7;37;40    #e0000000 #20ff8000 none
 menu color hotsel	1;7;37;40  #e0400000 #20ff8000 none
+menu color disabled	1;30;44    #60cccccc #00000000 std
