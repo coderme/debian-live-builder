@@ -120,3 +120,4 @@ menu color cmdmark	1;36;40    #c000ffff #00000000 std
 menu color cmdline	37;40      #c0ffffff #00000000 std
 menu color pwdborder	30;47      #80ffffff #20ffffff std
 menu color pwdheader	31;47      #80ff8080 #20ffffff std
+menu color pwdentry	30;47      #80ffffff #20ffffff std
