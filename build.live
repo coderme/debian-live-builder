@@ -121,3 +121,4 @@ menu color cmdline	37;40      #c0ffffff #00000000 std
 menu color pwdborder	30;47      #80ffffff #20ffffff std
 menu color pwdheader	31;47      #80ff8080 #20ffffff std
 menu color pwdentry	30;47      #80ffffff #20ffffff std
+menu color timeout_msg	37;40      #80ffffff #00000000 std
