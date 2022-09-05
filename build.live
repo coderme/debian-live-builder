@@ -130,3 +130,4 @@ LABEL linux
   MENU LABEL Debian Live
   MENU DEFAULT
   KERNEL /live/vmlinuz
+  APPEND initrd=/live/initrd boot=live
