@@ -131,3 +131,4 @@ LABEL linux
   MENU DEFAULT
   KERNEL /live/vmlinuz
   APPEND initrd=/live/initrd boot=live
+
