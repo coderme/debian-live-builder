@@ -138,3 +138,4 @@ LABEL linux
   KERNEL /live/vmlinuz
   APPEND initrd=/live/initrd boot=live nomodeset
 DOC
+
