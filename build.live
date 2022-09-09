@@ -133,3 +133,4 @@ LABEL linux
   APPEND initrd=/live/initrd boot=live
 
 LABEL linux
+  MENU LABEL Debian Live (nomodeset)
