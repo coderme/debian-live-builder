@@ -132,3 +132,4 @@ LABEL linux
   KERNEL /live/vmlinuz
   APPEND initrd=/live/initrd boot=live
 
+LABEL linux
