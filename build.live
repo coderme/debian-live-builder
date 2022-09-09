@@ -136,3 +136,4 @@ LABEL linux
   MENU LABEL Debian Live (nomodeset)
   MENU DEFAULT
   KERNEL /live/vmlinuz
+  APPEND initrd=/live/initrd boot=live nomodeset
