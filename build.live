@@ -139,3 +139,4 @@ LABEL linux
   APPEND initrd=/live/initrd boot=live nomodeset
 DOC
 
+############### EFI/UEFI #################
