@@ -134,3 +134,4 @@ LABEL linux
 
 LABEL linux
   MENU LABEL Debian Live (nomodeset)
+  MENU DEFAULT
