@@ -141,3 +141,4 @@ DOC
 
 ############### EFI/UEFI #################
 
+cat <<DOC > $STAGING/boot/grub/grub.cfg
