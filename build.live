@@ -145,3 +145,4 @@ cat <<DOC > $STAGING/boot/grub/grub.cfg
 insmod part_gpt
 insmod part_msdos
 insmod fat
+insmod iso9660
