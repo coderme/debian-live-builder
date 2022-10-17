@@ -152,3 +152,4 @@ insmod font
 
 set default="0"
 set timeout=30
+
