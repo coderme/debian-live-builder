@@ -150,3 +150,4 @@ insmod iso9660
 insmod all_video
 insmod font
 
+set default="0"
