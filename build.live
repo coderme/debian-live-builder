@@ -155,3 +155,4 @@ set timeout=30
 
 # If X has issues finding screens, experiment with/without nomodeset.
 
+menuentry "Debian Live [EFI/GRUB]" {
