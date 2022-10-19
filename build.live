@@ -160,3 +160,4 @@ menuentry "Debian Live [EFI/GRUB]" {
     linux ($root)/live/vmlinuz boot=live
     initrd ($root)/live/initrd
 }
+
