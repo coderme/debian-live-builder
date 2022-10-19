@@ -158,3 +158,4 @@ set timeout=30
 menuentry "Debian Live [EFI/GRUB]" {
     search --no-floppy --set=root --label DEBLIVE
     linux ($root)/live/vmlinuz boot=live
+    initrd ($root)/live/initrd
