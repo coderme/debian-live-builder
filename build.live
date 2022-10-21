@@ -166,3 +166,4 @@ menuentry "Debian Live [EFI/GRUB] (nomodeset)" {
     linux ($root)/live/vmlinuz boot=live nomodeset
     initrd ($root)/live/initrd
 }
+DOC
