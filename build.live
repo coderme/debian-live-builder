@@ -169,3 +169,4 @@ menuentry "Debian Live [EFI/GRUB] (nomodeset)" {
 DOC
 
 # copy grub cfg
+cp $STAGING/boot/grub/grub.cfg $STAGING/EFI/BOOT/
