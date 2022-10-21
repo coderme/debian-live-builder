@@ -168,3 +168,4 @@ menuentry "Debian Live [EFI/GRUB] (nomodeset)" {
 }
 DOC
 
+# copy grub cfg
