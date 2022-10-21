@@ -167,3 +167,4 @@ menuentry "Debian Live [EFI/GRUB] (nomodeset)" {
     initrd ($root)/live/initrd
 }
 DOC
+
