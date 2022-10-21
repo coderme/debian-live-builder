@@ -173,3 +173,4 @@ cp $STAGING/boot/grub/grub.cfg $STAGING/EFI/BOOT/
 
 # grub embeded config
 cat <<DOC > $DIR/tmp/grub-embed.cfg
+if ! [ -d "$cmdpath" ]; then
