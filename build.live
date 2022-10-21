@@ -171,3 +171,4 @@ DOC
 # copy grub cfg
 cp $STAGING/boot/grub/grub.cfg $STAGING/EFI/BOOT/
 
+# grub embeded config
