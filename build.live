@@ -178,3 +178,4 @@ if ! [ -d "$cmdpath" ]; then
     # https://gitlab.archlinux.org/archlinux/archiso/-/issues/183
     if regexp --set=1:isodevice '^(\([^)]+\))\/?[Ee][Ff][Ii]\/[Bb][Oo][Oo][Tt]\/?$' "$cmdpath"; then
         cmdpath="${isodevice}/EFI/BOOT"
+    fi
