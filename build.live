@@ -180,3 +180,4 @@ if ! [ -d "$cmdpath" ]; then
         cmdpath="${isodevice}/EFI/BOOT"
     fi
 fi
+configfile "${cmdpath}/grub.cfg"
