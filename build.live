@@ -174,3 +174,4 @@ cp $STAGING/boot/grub/grub.cfg $STAGING/EFI/BOOT/
 # grub embeded config
 cat <<DOC > $DIR/tmp/grub-embed.cfg
 if ! [ -d "$cmdpath" ]; then
+    # On some firmware, GRUB has a wrong cmdpath when booted from an optical disc.
