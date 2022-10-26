@@ -182,3 +182,4 @@ if ! [ -d "$cmdpath" ]; then
 fi
 configfile "${cmdpath}/grub.cfg"
 DOC
+
