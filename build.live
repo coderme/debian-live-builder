@@ -189,3 +189,4 @@ cp /usr/lib/ISOLINUX/isolinux.bin "${STAGING}/isolinux/" && \
     cp /usr/lib/syslinux/modules/bios/* "${STAGING}/isolinux/" 
 
 # copu UEFI to workspace
+cp -r /usr/lib/grub/x86_64-efi/* "${STAGING}/boot/grub/x86_64-efi/"
