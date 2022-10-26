@@ -186,3 +186,4 @@ DOC
 
 ##### PREPARE BOOT FILE 
 cp /usr/lib/ISOLINUX/isolinux.bin "${STAGING}/isolinux/" && \
+    cp /usr/lib/syslinux/modules/bios/* "${STAGING}/isolinux/" 
