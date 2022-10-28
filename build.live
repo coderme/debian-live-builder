@@ -197,3 +197,4 @@ grub-mkstandalone -O i386-efi \
     --locales="" \
     --themes="" \
     --fonts="" \
+    --output="$STAGING/EFI/BOOT/BOOTIA32.EFI" \
