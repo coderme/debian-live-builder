@@ -192,3 +192,4 @@ cp /usr/lib/ISOLINUX/isolinux.bin "${STAGING}/isolinux/" && \
 cp -r /usr/lib/grub/x86_64-efi/* "${STAGING}/boot/grub/x86_64-efi/"
 
 # generate grub efi image 
+grub-mkstandalone -O i386-efi \
