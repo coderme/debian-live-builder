@@ -199,3 +199,4 @@ grub-mkstandalone -O i386-efi \
     --fonts="" \
     --output="$STAGING/EFI/BOOT/BOOTIA32.EFI" \
     "boot/grub/grub.cfg=$DIR/tmp/grub-embed.cfg"
+    
