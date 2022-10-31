@@ -201,3 +201,4 @@ grub-mkstandalone -O i386-efi \
     "boot/grub/grub.cfg=$DIR/tmp/grub-embed.cfg"
     
  grub-mkstandalone -O x86_64-efi \
+    --modules="part_gpt part_msdos fat iso9660" \
