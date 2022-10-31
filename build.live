@@ -203,3 +203,4 @@ grub-mkstandalone -O i386-efi \
  grub-mkstandalone -O x86_64-efi \
     --modules="part_gpt part_msdos fat iso9660" \
     --locales="" \
+    --themes="" \
