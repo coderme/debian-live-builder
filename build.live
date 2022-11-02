@@ -207,3 +207,4 @@ grub-mkstandalone -O i386-efi \
     --fonts="" \
     --output="$STAGING/EFI/BOOT/BOOTx64.EFI" \
     "boot/grub/grub.cfg=$DIR/tmp/grub-embed.cfg"
+    
