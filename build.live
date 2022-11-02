@@ -209,3 +209,4 @@ grub-mkstandalone -O i386-efi \
     "boot/grub/grub.cfg=$DIR/tmp/grub-embed.cfg"
     
 # create fs for UEFI
+(cd $STAGING && \
