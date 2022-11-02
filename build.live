@@ -212,3 +212,4 @@ grub-mkstandalone -O i386-efi \
 (cd $STAGING && \
     dd if=/dev/zero of=efiboot.img bs=1M count=20 && \
     mkfs.vfat efiboot.img && \
+    mmd -i efiboot.img ::/EFI ::/EFI/BOOT && \
