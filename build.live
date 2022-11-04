@@ -218,3 +218,4 @@ grub-mkstandalone -O i386-efi \
         $STAGING/EFI/BOOT/BOOTx64.EFI \
         $STAGING/boot/grub/grub.cfg \
         ::/EFI/BOOT/
+)
