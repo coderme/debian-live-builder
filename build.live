@@ -219,3 +219,4 @@ grub-mkstandalone -O i386-efi \
         $STAGING/boot/grub/grub.cfg \
         ::/EFI/BOOT/
 )
+
