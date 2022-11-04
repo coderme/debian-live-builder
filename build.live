@@ -216,3 +216,4 @@ grub-mkstandalone -O i386-efi \
     mcopy -vi efiboot.img \
         $STAGING/EFI/BOOT/BOOTIA32.EFI \
         $STAGING/EFI/BOOT/BOOTx64.EFI \
+        $STAGING/boot/grub/grub.cfg \
