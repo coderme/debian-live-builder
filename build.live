@@ -228,3 +228,4 @@ xorriso \
     -o "$CWD/debian-live.iso" \
     -full-iso9660-filenames \
     -volid "DEBLIVE" \
+    --mbr-force-bootable -partition_offset 16 \
