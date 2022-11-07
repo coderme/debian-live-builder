@@ -227,3 +227,4 @@ xorriso \
     -iso-level 3 \
     -o "$CWD/debian-live.iso" \
     -full-iso9660-filenames \
+    -volid "DEBLIVE" \
