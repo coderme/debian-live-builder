@@ -224,3 +224,4 @@ grub-mkstandalone -O i386-efi \
 # create the iso
 xorriso \
     -as mkisofs \
+    -iso-level 3 \
