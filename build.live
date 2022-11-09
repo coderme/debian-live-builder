@@ -237,3 +237,4 @@ xorriso \
         -boot-load-size 4 \
         -boot-info-table \
         --eltorito-catalog isolinux/isolinux.cat \
+    -eltorito-alt-boot \
