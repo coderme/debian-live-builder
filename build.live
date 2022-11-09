@@ -231,3 +231,4 @@ xorriso \
     --mbr-force-bootable -partition_offset 16 \
     -joliet -joliet-long -rational-rock \
     -isohybrid-mbr /usr/lib/ISOLINUX/isohdpfx.bin \
+    -eltorito-boot \
