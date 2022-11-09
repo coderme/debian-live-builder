@@ -233,3 +233,4 @@ xorriso \
     -isohybrid-mbr /usr/lib/ISOLINUX/isohdpfx.bin \
     -eltorito-boot \
         isolinux/isolinux.bin \
+        -no-emul-boot \
