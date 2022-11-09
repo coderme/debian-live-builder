@@ -234,3 +234,4 @@ xorriso \
     -eltorito-boot \
         isolinux/isolinux.bin \
         -no-emul-boot \
+        -boot-load-size 4 \
