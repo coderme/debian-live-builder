@@ -232,3 +232,4 @@ xorriso \
     -joliet -joliet-long -rational-rock \
     -isohybrid-mbr /usr/lib/ISOLINUX/isohdpfx.bin \
     -eltorito-boot \
+        isolinux/isolinux.bin \
