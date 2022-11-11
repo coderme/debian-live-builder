@@ -238,3 +238,4 @@ xorriso \
         -boot-info-table \
         --eltorito-catalog isolinux/isolinux.cat \
     -eltorito-alt-boot \
+        -e --interval:appended_partition_2:all:: \
