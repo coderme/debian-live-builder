@@ -240,3 +240,4 @@ xorriso \
     -eltorito-alt-boot \
         -e --interval:appended_partition_2:all:: \
         -no-emul-boot \
+        -isohybrid-gpt-basdat \
