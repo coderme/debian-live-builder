@@ -241,3 +241,4 @@ xorriso \
         -e --interval:appended_partition_2:all:: \
         -no-emul-boot \
         -isohybrid-gpt-basdat \
+    -append_partition 2 C12A7328-F81F-11D2-BA4B-00A0C93EC93B ${STAGING}/efiboot.img \
